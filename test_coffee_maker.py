@@ -1,5 +1,6 @@
 from coffee_maker import CoffeeMaker
 
+#tests the constructor
 def test_default_resources():
     machine = CoffeeMaker()
 
