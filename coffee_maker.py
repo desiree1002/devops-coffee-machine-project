@@ -5,6 +5,12 @@ class CoffeeMaker:
         self.water = water
         self.beans = beans
         self.milk = milk
+
+    # add resources to coffee maker
+    def add_resources(self, water:int = 0, beans:int = 0, milk:int = 0):
+        self.water += water
+        self.beans += beans
+        self.milk += milk
     
     # brew an espresso and update resources
     def brew_espresso(self):
