@@ -8,9 +8,14 @@ def test_default_resources():
     assert machine.beans == 100
     assert machine.milk == 200
 
-def test_add_water():
+# test adding resources to the coffee maker
+def test_add_resources():
     machine = CoffeeMaker()
-    
-    machine.add_water(150)
-    
+
+    # add 150ml of water, 50g of beans, and 100ml of milk to the coffee maker
+    machine.add_resources(150, 50, 100)
+
+    # test that the resources have been updated correctly
     assert machine.water == 650
+    assert machine.beans == 150 
+    assert machine.milk == 300
