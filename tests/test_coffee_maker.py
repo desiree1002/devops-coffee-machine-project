@@ -30,3 +30,14 @@ def test_brew_espresso():
     assert machine.water == 450
     assert machine.beans == 90
     assert machine.milk == 200
+
+# test successful brewing latte
+def test_brew_latte():
+    machine = CoffeeMaker()
+
+    machine.brew_latte()
+
+    #check if resources have been updated correctly
+    assert machine.water == 300
+    assert machine.beans == 80
+    assert machine.milk == 50
