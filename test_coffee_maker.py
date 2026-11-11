@@ -20,18 +20,8 @@ def test_add_resources():
     assert machine.beans == 150 
     assert machine.milk == 300
 
-# test adding resources to the coffee maker
-def test_add_resources():
-    machine = CoffeeMaker()
-    
-    machine.add_resources(150, 50, 100)
-    
-    assert machine.water == 650
-    assert machine.beans == 150 
-    assert machine.milk == 300
-
 # test successful brewing espresso
-def test_brewespresso():
+def test_brew_espresso():
     machine = CoffeeMaker()
 
     machine.brew_espresso()
